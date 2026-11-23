@@ -1,0 +1,66 @@
+{
+  "ok": true,
+  "clients": {
+    "vng": {
+      "dump_sha256": "e05827bfd4bdbb3830eab34c0ed4c36185c72840e82a52bbfe3ace4375a29a77",
+      "framework_sha256": "200abdb842e278eea42e671a67f12967be9dd33bac1890c07f2d8213db0fe943",
+      "fields": {
+        "_stableMoveSpd": {
+          "type": "float",
+          "offset": 72
+        },
+        "_stableAirMoveSpeed": {
+          "type": "float",
+          "offset": 124
+        }
+      },
+      "controller_field": {
+        "name": "ActorControl.kunit",
+        "offset": "0xa0"
+      },
+      "getters": {
+        "get_maxStableMoveSpeed": {
+          "rva": "0x364aef8",
+          "native_prefix_hex": "09304139a9000036005040bd092c40b9e900003508000014004840bd015440bd0028211e092c40b969000034013040bd0008211e000080d2179dcd17",
+          "verified_load": "LDR S0, [X0, #0x48]"
+        },
+        "get_maxAirMoveSpeed": {
+          "rva": "0x364afb0",
+          "native_prefix_hex": "007c40bd015c40bd0028211e000080d2f39ccd1708644239880000362800805200010012c0035fd60868423900010012c0035fd601b0023900b000bd",
+          "verified_load": "LDR S0, [X0, #0x7c]"
+        }
+      }
+    },
+    "global": {
+      "dump_sha256": "c10ab6d6ecba4cba38b4a4f3d6f7414ffe57b1c93acf6ca1110ed665c3b75c6a",
+      "framework_sha256": "1b70957720466ad6b890932ec27dda2727da49244fee03e3009f7df386c7d6df",
+      "fields": {
+        "_stableMoveSpd": {
+          "type": "float",
+          "offset": 72
+        },
+        "_stableAirMoveSpeed": {
+          "type": "float",
+          "offset": 124
+        }
+      },
+      "controller_field": {
+        "name": "ActorControl.kunit",
+        "offset": "0xa0"
+      },
+      "getters": {
+        "get_maxStableMoveSpeed": {
+          "rva": "0x383981c",
+          "native_prefix_hex": "09304139a9000036005040bd092c40b9e900003508000014004840bd015440bd0028211e092c40b969000034013040bd0008211e000080d21375cd17",
+          "verified_load": "LDR S0, [X0, #0x48]"
+        },
+        "get_maxAirMoveSpeed": {
+          "rva": "0x38398d4",
+          "native_prefix_hex": "007c40bd015c40bd0028211e000080d2ef74cd1708644239880000362800805200010012c0035fd60868423900010012c0035fd601b0023900b000bd",
+          "verified_load": "LDR S0, [X0, #0x7c]"
+        }
+      }
+    }
+  },
+  "scope": "field identities and native getter loads; no in-game speed/account safety validation"
+}

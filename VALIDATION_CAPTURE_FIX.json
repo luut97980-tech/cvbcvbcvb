@@ -1,0 +1,14 @@
+{
+  "version": "2.33.2",
+  "build": "233430",
+  "scope": "local-visible capture-exclusion request, not device-verified",
+  "native_ios_build": false,
+  "device_tested": false,
+  "capture_exclusion_verified": false,
+  "keyboard_fix_verified": false,
+  "ui_tests": "passed",
+  "game_backend_unchanged": true,
+  "native_profiles_unchanged": true,
+  "application_lifecycle_unchanged": true,
+  "warning": "UI tests do not validate UIKit secure canvas behavior or remote capture output"
+}
